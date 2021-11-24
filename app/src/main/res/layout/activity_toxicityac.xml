@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".toxicityac">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/backforchem"
+        android:layout_width="430dp"
+        android:layout_height="865dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.222"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#372103"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/backkkk" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bubbleani"
+        android:layout_width="106dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="@+id/chemname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#FFFFFF"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/backfortox" />
+
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:id="@+id/circular_progress"
+        android:layout_width="208dp"
+        android:layout_height="203dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:direction="clockwise"
+        app:dotColor="#FFFFFF"
+        app:dotWidth="16dp"
+        app:drawDot="true"
+        app:enableProgressAnimation="true"
+        app:fillBackground="false"
+        app:gradientEndColor="#FFAE43"
+        app:gradientType="no_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:progressBackgroundColor="#0D000000"
+        app:progressBackgroundStrokeWidth="25dp"
+        app:progressCap="round"
+        app:progressColor="#814D07"
+        app:progressStrokeWidth="27dp"
+        app:startAngle="270"
+        app:textColor="#005C3705"
+        app:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/chemname"
+        android:layout_width="186dp"
+        android:layout_height="85dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Nicotine"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chemdesc"
+        android:layout_width="179dp"
+        android:layout_height="150dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Maximum limit for you is 60 mg!"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="50.6 mg"
+        android:textColor="#FF5C3705"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_progress"
+        app:layout_constraintEnd_toEndOf="@+id/circular_progress"
+        app:layout_constraintStart_toStartOf="@+id/circular_progress"
+        app:layout_constraintTop_toTopOf="@+id/circular_progress" />
+
+    <TextView
+        android:id="@+id/desctxt"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Nicotine increases blood pressure and heart rate."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chemicalselect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/datedis"
+        android:layout_width="338dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="January 2020"
+        android:textColor="#372103"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/chemicalselect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+    android:id="@+id/chemicalselect"
+    android:layout_width="257dp"
+    android:layout_height="77dp"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.187"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.159">
+
+    <com.gauravk.bubblenavigation.BubbleToggleView
+        android:id="@+id/toxic1tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bt_active="false"
+        app:bt_colorActive="#FF5C3705"
+        app:bt_colorInactive="#785C3705"
+        app:bt_icon="@drawable/ic_pill"
+        app:bt_padding="15dp"
+        app:bt_shape="@drawable/backforbottomnav"
+        app:bt_shapeColor="#0D5C3705"
+        app:bt_title="Nicotine"
+        app:bt_titlePadding="10dp"
+        app:bt_titleSize="17sp" />
+
+    <com.gauravk.bubblenavigation.BubbleToggleView
+        android:id="@+id/toxic2tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bt_active="false"
+        app:bt_colorActive="#131313"
+        app:bt_colorInactive="#99131313"
+        app:bt_icon="@drawable/ic_lungs"
+        app:bt_padding="15dp"
+        app:bt_shape="@drawable/backforbottomnav"
+        app:bt_shapeColor="#0D131313"
+        app:bt_title="Tar"
+        app:bt_titlePadding="10dp"
+        app:bt_titleSize="17sp" />
+
+    <com.gauravk.bubblenavigation.BubbleToggleView
+        android:id="@+id/toxic3tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bt_active="false"
+        app:bt_colorActive="#2F6700"
+        app:bt_colorInactive="#992F6700"
+        app:bt_icon="@drawable/ic_benzene"
+        app:bt_padding="15dp"
+        app:bt_shape="@drawable/backforbottomnav"
+        app:bt_shapeColor="#0D2F6700"
+        app:bt_title="COHb"
+        app:bt_titlePadding="10dp"
+        app:bt_titleSize="17sp" />
+
+</com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/mansmoke"
+        android:layout_width="131dp"
+        android:layout_height="177dp"
+        android:onClick="fkjgg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/mansmoke"
+        app:lottie_repeatCount="0" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="122dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF0303"
+        android:textSize="135sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.332"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:onClick="fkj"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pop" />
+
+    <TextView
+        android:id="@+id/counttext"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Count"
+        android:textColor="#001EFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberpicc"
+        android:layout_width="163dp"
+        android:layout_height="161dp"
+        android:layout_centerInParent="true"
+        android:divider="@color/common_google_signin_btn_text_light_focused"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:np_dividerColor="#00FFFFFF"
+        app:np_height="180dp"
+        app:np_max="100"
+        app:np_maxFlingVelocityCoefficient="1"
+        app:np_min="10"
+        app:np_orientation="vertical"
+        app:np_selectedTextColor="#AF1010"
+        app:np_selectedTextSize="45sp"
+        app:np_selectedTypeface="@font/comfortaa_light"
+        app:np_textColor="#991D1D"
+        app:np_textSize="30sp"
+        app:np_value="1"
+        app:np_width="64dp"
+        app:np_wrapSelectorWheel="false" />
+
+    <com.mikhaellopez.lazydatepicker.LazyDatePicker
+        android:id="@+id/lazyDatePicker"
+        android:layout_width="250dp"
+        android:layout_height="234dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:ldp_date_format="dd-mm-yyyy"
+        app:ldp_hint_color="#FFFFFF"
+        app:ldp_text_color="#000000" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

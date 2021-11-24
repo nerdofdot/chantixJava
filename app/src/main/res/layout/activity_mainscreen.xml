@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".mainscreen">
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="337dp"
+        android:layout_height="88dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/backforbn"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/countertab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#B90C0C"
+            app:bt_colorInactive="#6BB90C0C"
+            app:bt_icon="@drawable/ic_heart"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#2BB90C0C"
+            app:bt_title="Counter"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graphtab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#006E9F"
+            app:bt_colorInactive="#6B006E9F"
+            app:bt_icon="@drawable/ic_graph"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#1F00B0FF"
+            app:bt_title="Graph"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/chemicaltab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#372103"
+            app:bt_colorInactive="#6B372103"
+            app:bt_icon="@drawable/ic_flask"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#2B372103"
+            app:bt_title="Toxicity"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/doctortab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#306107"
+            app:bt_colorInactive="#6B306107"
+            app:bt_icon="@drawable/ic_doctor"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#2B306107"
+            app:bt_title="Doctor"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heartani"
+        android:layout_width="560dp"
+        android:layout_height="473dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/heart" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ecg"
+        android:layout_width="405dp"
+        android:layout_height="178dp"
+        android:alpha="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ecg"
+        app:lottie_repeatCount="0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/counterback"
+        android:layout_width="211dp"
+        android:layout_height="192dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#000000"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/blackdis"
+        app:lottie_repeatCount="0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/counterback2"
+        android:layout_width="211dp"
+        android:layout_height="192dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#000000"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/blackdis"
+        app:lottie_repeatCount="0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heartback"
+        android:layout_width="494dp"
+        android:layout_height="402dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#FF0000"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/heartback2"
+        app:lottie_repeatCount="0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heartback2"
+        android:layout_width="494dp"
+        android:layout_height="402dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/heartback2"
+        app:lottie_repeatCount="0" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="234dp"
+        android:layout_height="63dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="CHANTIX"
+        android:textColor="#F8B90C0C"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/lifereduced"
+        android:layout_width="370dp"
+        android:layout_height="92dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="33 DAYS"
+        android:textAlignment="viewEnd"
+        android:textColor="#F8950707"
+        android:textSize="45sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/lifereducedtxt"
+        android:layout_width="242dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="LIFE REDUCED"
+        android:textAlignment="textEnd"
+        android:textColor="#777777"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        tools:ignore="RtlCompat" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/addbut"
+        android:layout_width="121dp"
+        android:layout_height="117dp"
+        android:onClick="increasecount"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/addbut2"
+        app:lottie_repeatCount="0" />
+
+    <TextView
+        android:id="@+id/countofcig"
+        android:layout_width="152dp"
+        android:layout_height="144dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:shadowColor="#005F0000"
+        android:shadowDx="5"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/counterback"
+        app:layout_constraintEnd_toEndOf="@id/counterback"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@id/counterback"
+        app:layout_constraintTop_toTopOf="@id/counterback"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/daycount"
+        android:layout_width="211dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="DAY'S COUNT"
+        android:textColor="#777777"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/taptoaddcig"
+        android:layout_width="273dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Tap to add/delete a cigarette."
+        android:textAlignment="textStart"
+        android:textColor="#939393"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remani"
+        app:layout_constraintVertical_bias="0.007"
+        tools:ignore="RtlCompat" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/remani"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:onClick="decreasecount"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/remcig2"
+        app:lottie_repeatCount="0" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="293dp"
+        android:layout_height="34dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textColor="#929292"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+
+
+
+
+
+    <!-- xml page 3++++++++++++++++++++++++ -->
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/backforchem"
+        android:layout_width="430dp"
+        android:layout_height="865dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.222"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#372103"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/backkkk" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bubbleani"
+        android:layout_width="106dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="@+id/chemname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#FFFFFF"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/backfortox" />
+
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:id="@+id/circular_progress"
+        android:layout_width="208dp"
+        android:layout_height="203dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:direction="clockwise"
+        app:dotColor="#FFFFFF"
+        app:dotWidth="16dp"
+        app:drawDot="true"
+        app:enableProgressAnimation="true"
+        app:fillBackground="false"
+        app:gradientEndColor="#FFAE43"
+        app:gradientType="no_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:progressBackgroundColor="#0D000000"
+        app:progressBackgroundStrokeWidth="25dp"
+        app:progressCap="round"
+        app:progressColor="#814D07"
+        app:progressStrokeWidth="27dp"
+        app:startAngle="270"
+        app:textColor="#005C3705"
+        app:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/chemname"
+        android:layout_width="186dp"
+        android:layout_height="85dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Nicotine"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chemdesc"
+        android:layout_width="304dp"
+        android:layout_height="166dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Maximum limit for you is 60 mg!"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_progress"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="169dp"
+        android:layout_height="104dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="50.6 mg"
+        android:textColor="#FF5C3705"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_progress"
+        app:layout_constraintEnd_toEndOf="@+id/circular_progress"
+        app:layout_constraintStart_toStartOf="@+id/circular_progress"
+        app:layout_constraintTop_toTopOf="@+id/circular_progress" />
+
+    <TextView
+        android:id="@+id/desctxt"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Nicotine increases blood pressure and heart rate."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chemicalselect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/datedis"
+        android:layout_width="338dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="January 2020"
+        android:textColor="#372103"
+        android:textSize="37sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/chemicalselect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/chemicalselect"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/toxic1tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#FF5C3705"
+            app:bt_colorInactive="#785C3705"
+            app:bt_icon="@drawable/ic_pill"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D5C3705"
+            app:bt_title="Nicotine"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/toxic2tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#131313"
+            app:bt_colorInactive="#99131313"
+            app:bt_icon="@drawable/ic_lungs"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D131313"
+            app:bt_title="Tar"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/toxic3tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#2F6700"
+            app:bt_colorInactive="#992F6700"
+            app:bt_icon="@drawable/ic_benzene"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D2F6700"
+            app:bt_title="COHb"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--xml page 2...............................................-->
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph"
+        android:layout_width="417dp"
+        android:layout_height="344dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph2"
+        android:layout_width="417dp"
+        android:layout_height="344dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph3"
+        android:layout_width="417dp"
+        android:layout_height="344dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/desc_graph"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="This graph shows the amount of life you lost on monthly basis."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphselect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/graphslidinginfo"
+        android:layout_width="309dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Slide the graph left/right."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bargraph"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tapongrapghinfo"
+        android:layout_width="309dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Tap on graph bars to see data."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bargraph"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/maximumdisplay"
+        android:layout_width="314dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Max life lost : Sep"
+        android:textColor="#FF611212"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tapongrapghinfo"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/graphselect"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeardis"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph1tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#FF611212"
+            app:bt_colorInactive="#6B611212"
+            app:bt_icon="@drawable/ic_heart"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D611212"
+            app:bt_title="Life"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph2tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#FF234A02"
+            app:bt_colorInactive="#6B234A02"
+            app:bt_icon="@drawable/ic_coin"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D234A02"
+            app:bt_title="Money"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph3tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#131313"
+            app:bt_colorInactive="#6B131313"
+            app:bt_icon="@drawable/ic_no_smoking"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D131313"
+            app:bt_title="Intake"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <TextView
+        android:id="@+id/yeardis"
+        android:layout_width="338dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Year 2020"
+        android:textColor="#202020"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+
+
+
+
+    <!--xml page 4 ****************************************-->
+
+
+
+    <fragment
+        android:id="@+id/mapfragdis"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:context=".MainActivity"
+        tools:layout="@layout/activity_map" />
+
+    <!-- YOU NEED TO MAKE MAP_ACTIVITY XML-->
+
+    <TextView
+        android:id="@+id/doctordis"
+        android:layout_width="338dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="ENT Specialist"
+        android:textColor="#372103"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/doctorselect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/doctorselect"
+        android:layout_width="350dp"
+        android:layout_height="77dp"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/doctor1tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#232323"
+            app:bt_colorInactive="#6B232323"
+            app:bt_icon="@drawable/ic_drug"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D232323"
+            app:bt_title="ENT"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/doctor2tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#11974F"
+            app:bt_colorInactive="#6B11974F"
+            app:bt_icon="@drawable/ic_lung_cancer"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D11974F"
+            app:bt_title="Doctor 1"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/doctor3tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#850909"
+            app:bt_colorInactive="#6B850909"
+            app:bt_icon="@drawable/ic_heartbeat"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D850909"
+            app:bt_title="Doctor 2"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/doctor4tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#956510"
+            app:bt_colorInactive="#6B956510"
+            app:bt_icon="@drawable/ic_book"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D956510"
+            app:bt_title="Rehab"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <TextView
+        android:id="@+id/desctxtfordoc"
+        android:layout_width="306dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="For severe symptoms contact a cancer specialist."
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorselect"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <TextView
+        android:id="@+id/doctorphoneno"
+        android:layout_width="302dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Fetching Data.."
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorselect"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <TextView
+        android:id="@+id/doctorwebsite"
+        android:layout_width="381dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text="Fetching Data.."
+        android:textColor="#700707"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorselect"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/doctoraddress"
+        android:layout_width="310dp"
+        android:layout_height="77dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#272727"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorselect"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/doctorani"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctordis"
+        app:layout_constraintVertical_bias="0.33"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/entanimation"
+        app:lottie_repeatCount="0" />
+
+    <ImageView
+        android:id="@+id/infobutton"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorphoneno"
+        app:layout_constraintEnd_toEndOf="@+id/doctorani"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="@+id/doctorani"
+        app:layout_constraintTop_toTopOf="@+id/doctorani"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rehabani"
+        android:layout_width="417dp"
+        android:layout_height="421dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctordis"
+        app:layout_constraintVertical_bias="0.309"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/meditation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

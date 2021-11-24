@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".graph">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph"
+        android:layout_width="382dp"
+        android:layout_height="282dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph2"
+        android:layout_width="382dp"
+        android:layout_height="282dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bargraph3"
+        android:layout_width="382dp"
+        android:layout_height="282dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_graph"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/desc_graph"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="This graph shows the amount of life you lost on monthly basis."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphselect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/graphslidinginfo"
+        android:layout_width="309dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Slide the graph left/right."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bargraph"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tapongrapghinfo"
+        android:layout_width="309dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Tap on graph bars to see data."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bargraph"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/maximumdisplay"
+        android:layout_width="314dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Max life lost : Sep"
+        android:textColor="#FF611212"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tapongrapghinfo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/graphselect"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeardis"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph1tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#FF611212"
+            app:bt_colorInactive="#6B611212"
+            app:bt_icon="@drawable/ic_ecg"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D611212"
+            app:bt_title="Life"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph2tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#131313"
+            app:bt_colorInactive="#99131313"
+            app:bt_icon="@drawable/ic_coin"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D131313"
+            app:bt_title="Money"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/graph3tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="false"
+            app:bt_colorActive="#FF234A02"
+            app:bt_colorInactive="#6B234A02"
+            app:bt_icon="@drawable/ic_no_smoking"
+            app:bt_padding="15dp"
+            app:bt_shape="@drawable/backforbottomnav"
+            app:bt_shapeColor="#0D2F6700"
+            app:bt_title="Intake"
+            app:bt_titlePadding="10dp"
+            app:bt_titleSize="17sp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <TextView
+        android:id="@+id/yeardis"
+        android:layout_width="338dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Year 2020"
+        android:textColor="#202020"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

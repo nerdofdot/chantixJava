@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_backforgraph">
+
+    <TextView
+        android:id="@+id/desccc"
+        android:layout_width="224dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text=" Your Pack-years :"
+        android:textColor="#2B2B2B"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/desccc2"
+        android:layout_width="218dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text=" "
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worldometerurl"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/packyeardistext"
+        android:layout_width="111dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="33.12"
+        android:textColor="#570000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/desccc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/packyearalert"
+        android:layout_width="260dp"
+        android:layout_height="82dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="You do not need cancer screening."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desccc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="308dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="Deaths this year due to smoking, visit:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packyearalert"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/worldometerurl"
+        android:layout_width="307dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="https://www.worldometers.info/"
+        android:textColor="#3B8100"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

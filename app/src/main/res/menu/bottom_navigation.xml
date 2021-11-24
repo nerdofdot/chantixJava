@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/counterpage"
+        android:icon="@drawable/ic_heart"
+        android:title="Home"/>
+    <item
+        android:id="@+id/graph"
+        android:icon="@drawable/ic_graph"
+        android:title="Graph"/>
+    <item
+        android:id="@+id/chemical"
+        android:icon="@drawable/ic_flask"
+        android:title="Toxicity"/>
+    <item
+        android:id="@+id/doctor"
+        android:icon="@drawable/ic_doctor"
+        android:title="Doctors"/>
+</menu>
